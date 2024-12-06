@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="77980ef0-dda3-461c-bc8b-b6faf94c312e" name="Changes" comment="Add Template Menu">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/utils/UserInput.kt" afterDir="false" />
+    <list default="true" id="77980ef0-dda3-461c-bc8b-b6faf94c312e" name="Changes" comment="Add Logging capabilities to function calls">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/utils/UserInput.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/utils/UserInput.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +18,23 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="library-app" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -41,6 +58,9 @@
     &quot;accountId&quot;: &quot;c453a5a8-1ee7-47a5-9cd0-9403e3636c63&quot;
   }
 }</component>
+  <component name="KotlinScriptingSettings">
+    <option name="suppressDefinitionsCheck" value="true" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -59,7 +79,8 @@
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/godsw/OneDrive - South East Technological University (Waterford Campus)/software development tools libraray script assignmet/library-app"
+    "last_opened_file_path": "C:/Users/godsw/OneDrive - South East Technological University (Waterford Campus)/software development tools libraray script assignmet/library-app",
+    "settings.editor.selected.configurable": "preferences.language.Kotlin.scripting"
   }
 }]]></component>
   <component name="RunManager">
@@ -102,7 +123,23 @@
       <option name="project" value="LOCAL" />
       <updated>1733513681938</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Implement UserInput utility for robust console IO">
+      <option name="closed" value="true" />
+      <created>1733515096498</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1733515096498</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Add Logging capabilities to function calls">
+      <option name="closed" value="true" />
+      <created>1733518290941</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1733518290942</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -117,9 +154,13 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Added main.kt file with a mainmenu function" />
     <MESSAGE value="Add Template Menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Template Menu" />
+    <MESSAGE value="Implement UserInput utility for robust console IO" />
+    <MESSAGE value="Add Logging capabilities to function calls" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Logging capabilities to function calls" />
   </component>
 </project>

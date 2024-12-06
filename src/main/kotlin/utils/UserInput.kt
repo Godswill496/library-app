@@ -47,8 +47,8 @@ fun readNextChar(prompt: String?): Char {
         try {
             print(prompt)
             return readln().first()
-        } catch (e: Exception) {
-            System.err.println("\tEnter a character.")
+        } catch (e: NumberFormatException) {
+            System.err.println("\tEnter a character please.")
         }
     } while (true)
 }
