@@ -5,28 +5,27 @@ fun main() {
 }
 
 fun mainMenu(): Int {
-    println("")
-    println("--------------------")
-    println("LIBRARY MANAGEMENT APP")
-    println("--------------------")
-    println("MAIN MENU")
-    println("  1) Manage Books")
-    println("  2) Manage Members")
-    println("  3) Borrow a Book")
-    println("  4) Return a Book")
-    println("  5) List All Borrowed Books")
-    println("  6) List Available Books")
-    println("--------------------")
-    println("  0) Exit")
-    println("--------------------")
-    print("==>> ")
-    return readlnOrNull()?.toIntOrNull() ?: -1
+    print(""" 
+         > ----------------------------------
+         > |     LIBRARY MANAGEMENT APP     |
+         > ----------------------------------
+         > | MAIN MENU                      |
+         > |   1) Manage Books              |
+         > |   2) Manage Members            |
+         > |   3) Borrow a Book             |
+         > |   4) Return a Book             |
+         > |   5) List All Borrowed Books   |
+         > |   6) List Available Books      |
+         > ----------------------------------
+         > |   0) Exit                      |
+         > ----------------------------------
+         > ==>> """.trimMargin(">"))
+    return readln().toInt()
 }
 
 fun runMenu() {
     do {
-        val option = mainMenu()
-        when (option) {
+        when (val option = mainMenu()) {
             1  -> manageBooks()
             2  -> manageMembers()
             3  -> borrowBook()
@@ -34,7 +33,9 @@ fun runMenu() {
             5  -> listBorrowedBooks()
             6  -> listAvailableBooks()
             0  -> exitApp()
-            else -> println("Invalid option entered: $option")
+            else -> {
+                println("Invalid option entered: ${option}")
+            }
         }
     } while (true)
 }
