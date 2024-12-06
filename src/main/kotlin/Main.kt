@@ -1,6 +1,8 @@
+import io.github.oshai.kotlinlogging.KotlinLogging
 import java.lang.System.exit
 import utils.readIntNotNull
 import utils.readNextInt
+private val logger = KotlinLogging.logger {}
 
 fun main() {
     runMenu()
@@ -44,41 +46,31 @@ fun runMenu() {
 
 
 fun manageBooks() {
-    println("You chose Manage Books")
-
+    logger.info { "manageBooks() function invoked" }
 }
-
 
 fun manageMembers() {
-    println("You chose Manage Members")
-
+    logger.info { "manageMembers() function invoked" }
 }
-
 
 fun borrowBook() {
-    println("You chose Borrow a Book")
-
+    logger.info { "borrowBook() function invoked" }
 }
-
 
 fun returnBook() {
-    println("You chose Return a Book")
-
+    logger.info { "returnBook() function invoked" }
 }
-
 
 fun listBorrowedBooks() {
-    println("You chose List All Borrowed Books")
-
+    logger.info { "listBorrowedBooks() function invoked" }
 }
 
-
 fun listAvailableBooks() {
-    println("You chose List Available Books")
-
+    logger.info { "listAvailableBooks() function invoked" }
 }
 
 fun exitApp() {
+    logger.info { "exitApp() function invoked" }
     println("Exiting...bye")
     kotlin.system.exitProcess(0)
 }
