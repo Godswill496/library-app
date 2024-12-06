@@ -1,14 +1,14 @@
-Introduction 
+#Introduction 
 
-This application provides a way to manage books, members, and borrowed or returned books effectively.
+##This application provides a way to manage books, members, and borrowed or returned books effectively.
 
-Features of the app include:
+###Features of the app include:
 
-Comprehensive Management Options: Manage books and members with ease using a user-friendly menu-driven interface.
-Borrow and Return Tracking: Keep track of borrowed books and efficiently update their status when returned.
-Listing Capabilities: View all borrowed books or check which books are currently available in the library.
-Streamlined Operations: Built-in functionality for clear and organized data management, ensuring the library remains well-organized.
-The application provides a seamless way to maintain library records and ensures all operations are logged and tracked.
+###Comprehensive Management Options: Manage books and members with ease using a user-friendly menu-driven interface.
+###Borrow and Return Tracking: Keep track of borrowed books and efficiently update their status when returned.
+###Listing Capabilities: View all borrowed books or check which books are currently available in the library.
+###Streamlined Operations: Built-in functionality for clear and organized data management, ensuring the library remains well-organized.
+###The application provides a seamless way to maintain library records and ensures all operations are logged and tracked.
 
 You can integrate this app into your library system or use it as a standalone utility for small-scale library operations.
 
