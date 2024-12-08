@@ -19,11 +19,11 @@ fun mainMenu(): Int {
          > ----------------------------------
          > | MAIN MENU                      |
          > |   1) Add Books 
-         > |   2) List All Books           |
+         > |   2) List All Books            |
          > |   3) Borrow a Book             |
          > |   4) Return a Book             |
          > |   5) List All Borrowed Books   |
-         > |   6) Manage Members      |
+         > |   6) Delete Books              |
          > ----------------------------------
          > |   0) Exit                      |
          > ----------------------------------
@@ -39,7 +39,7 @@ fun runMenu() {
             3  -> borrowBook()
             4  -> returnBook()
             5  -> listBorrowedBooks()
-            6  -> manageMembers()
+            6  -> deleteBook()
             0  -> exitApp()
             else -> {
                 println("Invalid option entered: ${option}")
@@ -82,9 +82,28 @@ fun listBorrowedBooks() {
     logger.info { "listBorrowedBooks() function invoked" }
 }
 
-fun manageMembers() {
-    logger.info { "manageMembers() function invoked" }
+fun deleteBook(){
+    //logger.info { "deleteNotes() function invoked" }
+    listAllBooks()
+    if (libraryAPI.numberOfBooks() > 0) {
+        //only ask the user to choose the note to delete if notes exist
+        val indexToDelete = readNextInt("Enter the index of the note to delete: ")
+        //pass the index of the note to NoteAPI for deleting and check for success.
+        val bookToDelete = libraryAPI.deleteBook(indexToDelete)
+        if (bookToDelete != null) {
+            println("Delete Successful! Deleted book: ${bookToDelete.bookTitle}")
+        } else {
+            println("Delete NOT Successful")
+        }
+    }
 }
+
+private operator fun Unit.compareTo(i: Int): Int {
+    return TODO("Provide the return value")
+}
+private val Boolean.bookTitle: String
+    get() = Unit.toString()
+
 
 fun exitApp() {
     logger.info { "exitApp() function invoked" }
