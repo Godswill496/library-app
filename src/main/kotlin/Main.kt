@@ -20,7 +20,7 @@ fun mainMenu(): Int {
          > | MAIN MENU                      |
          > |   1) Add Books 
          > |   2) List All Books            |
-         > |   3) Borrow a Book             |
+         > |   3) Update a Book             |
          > |   4) Return a Book             |
          > |   5) List All Borrowed Books   |
          > |   6) Delete Books              |
@@ -36,7 +36,7 @@ fun runMenu() {
         when (val option = mainMenu()) {
             1  -> addBook()
             2  -> listAllBooks()
-            3  -> borrowBook()
+            3  -> updateBook()
             4  -> returnBook()
             5  -> listBorrowedBooks()
             6  -> deleteBook()
@@ -70,9 +70,32 @@ fun listAllBooks() {
     println(libraryAPI.listAllBooks())
 }
 
-fun borrowBook() {
-    logger.info { "borrowBook() function invoked" }
+fun updateBook() {
+    listAllBooks()
+    if (libraryAPI.numberOfBooks() > 0) {
+        // Ask for the index of the book to update
+        val indexToUpdate = readNextInt("Enter the index of the book to update: ")
+        if (libraryAPI.isValidIndex(indexToUpdate)) {
+            // Ask for new details for the book
+            val bookTitle = readNextLine("Enter the new title of the book: ")
+            val bookAuthor = readNextLine("Enter the new author of the book: ")
+            val bookGenre = readNextLine("Enter the new genre of the book: ")
+
+            // Pass the updated book details to the libraryAPI
+            val isUpdated = libraryAPI.updateBook(indexToUpdate, Library(bookTitle, bookAuthor, bookGenre))
+            if (isUpdated) {
+                println("Book updated successfully!")
+            } else {
+                println("Failed to update the book.")
+            }
+        } else {
+            println("Invalid index. Please try again.")
+        }
+    } else {
+        println("No books available to update.")
+    }
 }
+
 
 fun returnBook() {
     logger.info { "returnBook() function invoked" }
