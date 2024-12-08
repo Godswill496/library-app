@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="77980ef0-dda3-461c-bc8b-b6faf94c312e" name="Changes" comment="Add new Model class, Library">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/controllers/LibraryAPI.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
-    </list>
+    <list default="true" id="77980ef0-dda3-461c-bc8b-b6faf94c312e" name="Changes" comment="Creating the Collection" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -164,7 +160,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733527367224</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Creating the Collection">
+      <option name="closed" value="true" />
+      <created>1733633610795</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1733633610795</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -188,6 +192,7 @@
     <MESSAGE value="Add Logging capabilities to function calls" />
     <MESSAGE value="removed any unused imports from your main.kt" />
     <MESSAGE value="Add new Model class, Library" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add new Model class, Library" />
+    <MESSAGE value="Creating the Collection" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creating the Collection" />
   </component>
 </project>
