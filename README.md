@@ -14,7 +14,6 @@ You can integrate this app into your library system or use it as a standalone ut
 
 Features
 
--Google Sign-In: Securely log in to the Library Management App using your Google account.
 -Add Book Records: Easily add new books to the library's inventory for efficient cataloging.
 -Delete Book Records: Remove outdated or unavailable books from the library's database.
 -Edit Book Details: Update information about books, such as title, author, or availability status.
