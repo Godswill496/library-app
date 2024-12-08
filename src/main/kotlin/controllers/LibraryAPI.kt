@@ -1,12 +1,13 @@
 package controllers
 
+import Library
 import java.awt.print.Book
 
 
 class LibraryAPI {
     private val books = ArrayList<Book>()
 
-    fun add(book: Book): Boolean {
+    fun add(book: Library): Boolean {
         return books.add(book)
     }
 
@@ -43,6 +44,11 @@ class LibraryAPI {
             false
         }
     }
+
+    fun numberOfBooks() {
+
+    }
 }
+
 
 
