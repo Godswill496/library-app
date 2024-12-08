@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="77980ef0-dda3-461c-bc8b-b6faf94c312e" name="Changes" comment="Add Logging capabilities to function calls">
+    <list default="true" id="77980ef0-dda3-461c-bc8b-b6faf94c312e" name="Changes" comment="Add new Model class, Library">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/controllers/LibraryAPI.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/utils/UserInput.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/utils/UserInput.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,10 +40,16 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin File" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -77,9 +83,12 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "collection-and-model",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/godsw/OneDrive - South East Technological University (Waterford Campus)/software development tools libraray script assignmet/library-app",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.language.Kotlin.scripting"
   }
 }]]></component>
@@ -139,7 +148,23 @@
       <option name="project" value="LOCAL" />
       <updated>1733518290942</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="removed any unused imports from your main.kt">
+      <option name="closed" value="true" />
+      <created>1733518912970</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1733518912970</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Add new Model class, Library">
+      <option name="closed" value="true" />
+      <created>1733527367224</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1733527367224</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -161,6 +186,8 @@
     <MESSAGE value="Add Template Menu" />
     <MESSAGE value="Implement UserInput utility for robust console IO" />
     <MESSAGE value="Add Logging capabilities to function calls" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Logging capabilities to function calls" />
+    <MESSAGE value="removed any unused imports from your main.kt" />
+    <MESSAGE value="Add new Model class, Library" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add new Model class, Library" />
   </component>
 </project>
